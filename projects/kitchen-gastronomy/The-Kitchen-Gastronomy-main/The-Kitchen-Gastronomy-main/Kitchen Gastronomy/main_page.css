@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar Section */
+.navbar {
+    background-image: linear-gradient(#FFBE98, #FEECE2) !important;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.nav-link {
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+    color: #de4b66;
+    transform: scale(1.3);
+}
+
+/* INTRODUCTION SECTION */
+#introduction .intro {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    background-color: #FEF5ED;
+}
+
+#introduction .intro_description {
+    flex: 1 1 50%;
+    padding: 50px;
+}
+
+#introduction .intro_description h1 {
+    font-size: 5.2em;
+    font-family: 'Baskerville BT', sans-serif;
+}
+
+#introduction .intro_description p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    text-align: justify;
+}
+
+#introduction .intro_description button {
+    width: 250px;
+    height: 100px;
+    border: 1px solid;
+    border-radius: 50px;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#introduction .intro_description button:hover {
+    background-color: #FFBE98;
+}
+
+#introduction .intro_img {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#introduction #img1 {
+    max-width: 100%;
+    filter: drop-shadow(5px 5px 15px #000);
+    height: auto;
+}
+
+/* CAROUSEL SECTION */
+#crsl .carousel {
+    width: 100%;
+    padding: 3vh 15vw;
+    background-color: #FEECE2;
+}
+
+#crsl .carousel h1 {
+    font-family: 'Baskerville BT', sans-serif;
+    color: #000;
+    font-size: 4em;
+    text-align: center;
+}
+
+#crsl .carousel-inner {
+    width: 100%;
+    max-height: 90vh;
+    border-radius: 50px 10px 50px 10px;
+    box-shadow: 15px 15px 20px grey;
+}
+
+/* SERVICE - CARD SECTION */
+.service {
+    background-color: #FEF5ED;
+    padding: 50px 0px;
+    margin: 0;
+}
+
+.service h1 {
+    text-align: center;
+    font-family: 'Baskerville BT', sans-serif;
+    font-size: 5em;
+
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 10vh;
+    background-color: #f8dbb5;
+    border-radius: 20px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    background-color: #f3b96c;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+}
+
+/* SPOTLIGHT SECTION */
+.showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px;
+    background-color: #FEECE2;
+}
+
+.showcase_title {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Baskerville BT', sans-serif;
+}
+
+.showcase_title h1{
+    font-size: 4em;
+}
+
+.showcase_container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.showcase_videos {
+    width: 350px;
+    margin: 10px;
+}
+
+.showcase_videos video {
+    width: 100%;
+    height: 100%;
+    transition: ease 0.5s;
+}
+
+.showcase_videos video:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* FOOTER SECTION */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#FFBE98, #FEECE2);
+}
+
+.social-container a[target="_blank"][href="https://www.instagram.com/thekitchengastronomyph/"] i.bi-instagram {
+    color: #de4b66;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.social-container a[target="_blank"][href="https://www.facebook.com/thekitchengastronomyph/"] i.bi-facebook {
+    color: #1877F2;
+    font-size: 25px;
+}
+
+#c-num:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #de4b66;
+}
+
+footer img{
+    width: 13vh;
+    height: 13vh;
+}

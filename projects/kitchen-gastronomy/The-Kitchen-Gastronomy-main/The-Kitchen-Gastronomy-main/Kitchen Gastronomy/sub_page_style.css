@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;       
+    font-family: 'Montserrat', sans-serif;                                   
+}
+
+/* Navbar */
+.navbar{
+    background-image: linear-gradient(#FFBE98, #FEECE2) !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    scroll-behavior: smooth;
+}
+
+.nav-link {
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+    color: #de4b66;
+    transform: scale(1.3);
+}
+
+/*About Us SECTION*/
+.about-us{
+    background-color: #ffeddd;
+    font-size: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex: wrap;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 990px) {
+    .about-us{
+        flex-direction: column;
+    }
+
+    .about-us .about-left,
+    .about-us .about-right{
+        width: 100%;
+    }
+}
+.about-us .about-left{
+    width: 50%;
+    transition: 1s;
+    margin-left: 5%;
+    min-height: 100px;
+}
+.about-us .about-left h2{
+    font-size: 3em;
+    color: #000;
+    font-weight: 500;
+    font-family: 'Baskerville BT', sans-serif; 
+    transition: 0.3s ease-out;
+    margin-top: 50px;
+}
+.about-us .about-right{
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+}
+.about-us .about-left p{
+font-size: 20px;
+text-align: justify;
+transition: 0.1s ease-out;
+font-family: 'Montserrat', sans-serif;
+font-weight: 300;
+}
+
+.about-us .about-right img{
+    width: 80%;
+    margin-left: 10%;
+    padding: 10px;
+    margin-top: 5%;
+    transition: 1s ease-in;
+}
+
+
+/*FAQs SECTION*/
+.faqs{
+    background-image: linear-gradient(#f9e3ca, #f6ccac, #f9e3ca);
+    padding-bottom: 80px;
+}
+.wrapper{
+    max-width: 75% ;
+    margin: auto;
+}
+
+.wrapper > h2{
+    margin: 0 1.5em;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.ques{
+    background-color: #FFBE98;
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 100%;
+    padding: 2em 2.5em;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold; 
+}
+
+.ques i{
+    font-size: 1.5em;
+}
+.active, .ques:hover{
+    background-color: #faa777;
+}
+
+.panel p{
+    color: black;
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.panel{
+    padding: 0 2em 2.5em;
+    background-color:#faa777;
+    overflow: hidden;
+    display: none;
+}
+
+.faq{
+    border: 1px solid;
+    margin-top: 10px;
+}
+
+.faq.active{
+    border: none;
+}
+
+/*CONTACT FORM SECTION */
+#contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f9d9c0;
+}
+
+#contact .header{
+    max-width: 75%;
+    text-align: center;
+}
+
+#contact .header h2{
+    padding-top: 50px;
+    font-family: 'Baskerville BT', sans-serif; 
+    font-size: 5em;
+    color: #000;
+    font-weight: 500;
+}
+
+#contact .header p{
+    color: #000;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.container{
+    font-weight: bold;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 50px;
+    background: #fff ;
+    margin-top: 30px;
+    border-radius: 25px;
+}
+
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+
+}
+
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    cursor: pointer;
+    transition: 1s ease-in;
+}
+
+.container .contactInfo .box .icon{
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+    background: repeating-conic-gradient(from 30deg, rgb(91, 150, 91) 0%, rgb(156, 216, 179) 10%,
+    transparent 10%, transparent 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .contactInfo .box .icon::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background: repeating-conic-gradient(from 120deg, rgb(91, 150, 91) 0%, rgb(156, 216, 179) 10%,
+    transparent 10%, transparent 50%);
+}
+
+.container .contactInfo .box .icon::after{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background-color: #fff;
+}
+
+.container .contactInfo .box .icon b{
+    position: absolute;
+    inset: 8px ;
+    background-color:rgb(111, 158, 111) ;
+    z-index: 1;
+}
+
+.container .contactInfo .box .icon i{
+    position: relative;
+    z-index: 2;
+    color: black;
+    font-size: 1.25em;
+}
+
+.container .contactInfo .box .text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    color: black;
+    font-weight: 500px;
+}
+
+.container .contactInfo .connect{
+    margin-top: 50px;
+    border-left: 50px solid rgb(150, 201, 150);
+    padding-left: 10px;
+    line-height: 1em;
+}
+
+.container .contactInfo .platform{
+    position: relative;
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+}
+.container .contactInfo .platform li{
+    list-style: none;
+}
+
+.container .contactInfo .platform li a {
+   color: black;
+    font-size: 3em;
+    transition: 0.25s;
+    margin: 0 20px;
+}
+
+.container .contactInfo .platform li a:hover{
+    color: rgb(87, 143, 87);
+    filter: drop-shadow(5px 5px 15px rgb(87, 143, 87));
+}
+
+.container .contactForm{
+    position: relative;
+    transition: 0.5s;
+    width: 40%;
+    padding: 30px;
+}
+
+.container .contactForm form h2{
+    font-family: 'Baskerville BT', sans-serif; 
+    font-size: 3em;
+    font-weight: bold;
+}
+.container .contactForm form .inputForm input[type="date"]{
+    width: 30%;
+}
+
+.container .contactForm form .inputForm input[type="time"]{
+    width: 30%;
+    margin-left: 10%;
+}
+
+.container .contactForm form .inputForm label.preftime{
+    margin-top: 0;
+    margin-left: 15%;
+}
+
+.container .contactForm form .inputForm label.delivertime{
+    margin-top: 0;
+    margin-left: 5%;
+}
+.container .contactForm form .inputForm label.pinned{
+    margin-top:0;
+}
+.container .contactForm form .inputForm input{
+    width: 80%;
+    padding: 10px;
+    font-size: 1em;
+    margin: 5px 0;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid rgb(87, 143, 87);
+    outline: none;
+}
+
+.container .contactForm form .inputForm #pinnedmap{
+    border: none;
+}
+
+.container .contactForm form .inputForm textarea{
+    border: 1px solid black;
+    resize: none;
+    border-radius: 10px;
+    width: 100%;
+    outline: none;
+}
+
+.container .contactForm form .inputForm textarea::placeholder{
+margin-left: 10px;
+}
+
+.container .contactForm form .inputForm #submit{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.container .contactForm form .inputForm #submit:hover{
+    color: white;
+    background-color: rgb(87, 143, 87);
+    border-color: rgb(87, 143, 87);
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+@media (max-width: 990px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .container .contactInfo,
+    .container .contactForm{
+        width: 100%;
+    }
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#FFBE98, #FEECE2);
+}
+
+.social-container a[target="_blank"][href="https://www.instagram.com/thekitchengastronomyph/"] i.bi-instagram {
+    color: #de4b66;
+    font-size: 25px;
+    padding: 5px;
+    
+}
+
+.social-container a[target="_blank"][href="https://www.facebook.com/thekitchengastronomyph/"] i.bi-facebook {
+    color: #1877F2;
+    font-size: 25px;
+    
+}
+
+#c-num:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #de4b66;
+}
+
+footer img{
+    width: 13vh;
+    height: 13vh;
+}

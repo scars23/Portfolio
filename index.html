@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Charles Aldrin T. Mendoza — Front-End Developer, UI/UX and Product Designer."
+  >
+
+  <meta name="theme-color" content="#141615">
+
+  <title>Charles Mendoza | Design & Development</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Navigation -->
+  <header class="header">
+    <a class="logo" href="#home" aria-label="Charles Mendoza home">
+      cm<span>®</span>
+    </a>
+
+    <nav id="navigation" aria-label="Main navigation">
+    <a href="#projects">Work</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#certifications">Credentials</a>
+    <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="nav-contact" href="#contact">
+      Let’s talk <span aria-hidden="true">✳</span>
+    </a>
+
+    <button
+      class="menu-button"
+      aria-controls="navigation"
+      aria-expanded="false"
+      type="button"
+    >
+      Menu
+    </button>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero container" id="home">
+      <div class="hero-top">
+        <span class="eyebrow">
+          DESIGNER BY MIND. DEVELOPER BY CRAFT.
+        </span>
+
+        <span class="availability">
+          <span aria-hidden="true"></span>
+          Open to opportunities
+        </span>
+      </div>
+
+      <h1>
+        Thoughtful design.<br>
+        Purposeful <em>code.</em>
+        <span class="hero-star" aria-hidden="true">✳</span>
+      </h1>
+
+      <div class="hero-bottom">
+        <div>
+          <p class="hero-description">
+            Hi, I’m <strong>Charles Aldrin T. Mendoza.</strong><br>
+            I connect design and technology to build digital
+            experiences that feel as good as they work.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">
+              Explore my work
+              <span aria-hidden="true">+</span>
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="assets/Charles-Mendoza-CV.pdf"
+              download="Charles-Mendoza-CV.pdf"
+            >
+              Download CV
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-meta">
+          <p>
+            FRONT-END DEVELOPER<br>
+            UI / UX & PRODUCT DESIGNER
+          </p>
+
+          <span>
+            Sto. Tomas, Pampanga ·
+            <span id="local-time">PHT</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="hero-footer">
+        <span>SCROLL TO EXPLORE</span>
+        <span>PORTFOLIO / 2026</span>
+      </div>
+    </section>
+
+    <div class="discipline-strip" aria-label="Design and development focus">
+      <span>DESIGN</span>
+      <b aria-hidden="true">✳</b>
+      <span>DEVELOPMENT</span>
+      <b aria-hidden="true">✳</b>
+      <span>PRODUCT THINKING</span>
+      <b aria-hidden="true">✳</b>
+      <span>DETAILS THAT MATTER</span>
+    </div>
+
+    <!-- Projects -->
+    <section class="section container" id="projects">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">01 / SELECTED WORK</span>
+          <h2>Ideas into <em>interfaces.</em></h2>
+        </div>
+
+        <p>
+          A selection of design, development,<br>
+          and engineering projects.
+        </p>
+      </div>
+
+      <div class="project-filters" role="group" aria-label="Filter projects">
+        <button
+          class="active"
+          data-filter="all"
+          aria-pressed="true"
+          type="button"
+        >
+          All work
+        </button>
+
+        <button
+          data-filter="development"
+          aria-pressed="false"
+          type="button"
+        >
+          Development
+        </button>
+
+        <button
+          data-filter="design"
+          aria-pressed="false"
+          type="button"
+        >
+          UI / UX & Product
+        </button>
+
+        <button
+          data-filter="quality"
+          aria-pressed="false"
+          type="button"
+        >
+          Quality
+        </button>
+      </div>
+
+      <div class="project-grid" id="project-grid"></div>
+
+      <p class="sr-only" id="filter-status" aria-live="polite"></p>
+    </section>
+
+    <!-- About -->
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <div>
+          <span class="eyebrow">02 / A LITTLE ABOUT ME</span>
+
+          <h2>
+            Creative thinking.<br>
+            <em>Engineering mindset.</em>
+          </h2>
+
+          <div class="identity">
+            
+            <img
+              class="about-photo"
+              src="assets/profile.jpg"
+              alt="Charles Aldrin T. Mendoza"
+              loading="lazy"
+              width="160"
+              height="160"
+            >
+            <div>
+              <strong>CHARLES ALDRIN T. MENDOZA</strong>
+              <span>Computer Engineering graduate</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <p class="large-text">
+            I care about how a product looks, how it feels,
+            and how it actually works.
+          </p>
+
+          <p>
+            My Computer Engineering background connects the creative
+            and technical sides of building products. I have hands-on
+            experience in web development, UI/UX design, manual testing,
+            hardware-software integration, and technical documentation.
+          </p>
+
+          <p>
+            I enjoy turning complex ideas into clear interfaces,
+            improving usability, and working through the details
+            that make a product reliable.
+          </p>
+
+          <div class="about-facts">
+            <div>
+              <span>BASED IN</span>
+              <strong>Sto. Tomas, Pampanga</strong>
+            </div>
+
+            <div>
+              <span>MY APPROACH</span>
+              <strong>Design + Technology</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section container" id="skills">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">03 / CAPABILITIES</span>
+
+          <h2>
+            From first sketch<br>
+            to <em>final build.</em>
+          </h2>
+        </div>
+
+        <p>
+          Design sensibility.<br>
+          Technical precision.
+        </p>
+      </div>
+
+      <div class="capability-grid">
+        <article class="capability">
+          <span class="capability-number">01 / DESIGN</span>
+          <h3>UI/UX Design</h3>
+
+          <p>
+            Clear layouts, thoughtful navigation, and interfaces
+            that help people understand what to do next.
+          </p>
+
+          <div class="tags">
+            <span>UI / UX Design</span>
+            <span>Responsive Design</span>
+            <span>Interface Improvement</span>
+            <span>Canva</span>
+          </div>
+          <a class="capability-proof" href="#projects">
+          <h4>Applied in Analysero & Kitchen Gastronomy</h4>
+          </a>
+        </article>
+
+        <article class="capability">
+          <span class="capability-number">02 / DEVELOPMENT</span>
+          <h3>Front-End Development</h3>
+
+          <p>
+            Functional web experiences with considered structure,
+            behavior, and attention to detail.
+          </p>
+
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Bootstrap</span>
+            <span>Python</span>
+            <span>MySQL</span>
+            <span>C / C++</span>
+            <span>Java</span>
+          </div>
+          <a class="capability-proof" href="#experience">
+            <h4>Applied in website projects & my internship</h4>
+          </a>
+        </article>
+
+        <article class="capability">
+          <span class="capability-number">03 / QUALITY</span>
+          <h3>Testing & Documentation</h3>
+
+          <p>
+            Careful testing, clear documentation, and practical
+            troubleshooting across software and prototypes.
+          </p>
+
+          <div class="tags">
+            <span>Manual Testing</span>
+            <span>Debugging</span>
+            <span>Bug Reporting</span>
+            <span>Prototype Evaluation</span>
+            <span>Technical Documentation</span>
+          </div>
+          <a class="capability-proof" href="#projects">
+            <h4>Applied in Analysero prototype testing</h4>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience and education -->
+    <section class="section container experience-section" id="experience">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">04 / EXPERIENCE & EDUCATION</span>
+          <h2>A technical <em>foundation.</em></h2>
+        </div>
+      </div>
+
+      <div class="experience-grid">
+        <article class="experience-card">
+          <span class="eyebrow">FEBRUARY – MAY 2026</span>
+
+          <h3>Web Development & Systems Support Intern</h3>
+
+          <p class="organization">
+            Knowledge Management and Innovation Office —
+            Intellectual Property Center<br>
+            Pampanga State University
+          </p>
+
+          <ul>
+            <li>
+              Developed and maintained website components using
+              HTML, CSS, and JavaScript.
+            </li>
+
+            <li>
+              Contributed to an accreditation document management system.
+            </li>
+
+            <li>
+              Assisted with database management, digital records,
+              and information retrieval.
+            </li>
+
+            <li>
+              Tested system functions, identified issues, and implemented
+              improvements based on user feedback.
+            </li>
+
+            <li>
+              Prepared technical documentation, reports, and
+              project evaluation materials.
+            </li>
+          </ul>
+        </article>
+
+        <div>
+          <article class="education-card">
+            <span class="eyebrow">2022 – 2026</span>
+            <h3>BS Computer Engineering</h3>
+            <p>Pampanga State University</p>
+            <span class="location">Bacolor, Pampanga</span>
+          </article>
+
+          <article class="education-card">
+            <span class="eyebrow">2020 – 2022</span>
+            <h3>STEM Strand</h3>
+            <p>University of the Assumption</p>
+            <span class="location">San Fernando, Pampanga</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section container" id="certifications">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">05 / CERTIFICATIONS</span>
+          <h2>Always <em>learning.</em></h2>
+        </div>
+
+        <p>
+          Building on a foundation<br>
+          in Computer Engineering.
+        </p>
+      </div>
+
+      <div id="certificate-list"></div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-top">
+          <span class="eyebrow">06 / WHAT’S NEXT?</span>
+          <span>OPEN TO WORK & COLLABORATIONS</span>
+        </div>
+
+        <h2>
+          Let’s build<br>
+          something <em>useful.</em>
+          <span aria-hidden="true">✳</span>
+        </h2>
+
+        <div class="contact-bottom">
+          <p>
+            Have a project or an opportunity in mind?<br>
+            Let’s start a conversation.
+          </p>
+
+          <div class="contact-links" id="contact-links"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <span>
+      © <span id="year">2026</span> Charles Aldrin T. Mendoza
+    </span>
+
+    <span>Designed with intention. Built with care.</span>
+
+    <a href="#home">Back to top</a>
+  </footer>
+
+  <!-- Project details -->
+  <dialog id="project-dialog" aria-labelledby="dialog-title">
+  <form method="dialog">
+    <button
+      id="close-project-dialog"
+      class="dialog-close"
+      aria-label="Close project details"
+      type="submit"
+    >
+      ×
+    </button>
+  </form>
+
+    <span class="eyebrow" id="dialog-category"></span>
+    <h2 id="dialog-title"></h2>
+    <p id="dialog-description"></p>
+
+    <div class="dialog-focus">
+      <span class="eyebrow">MY CONTRIBUTION</span>
+      <p id="dialog-focus"></p>
+    </div>
+
+    <div class="tags" id="dialog-tags"></div>
+    <div id="dialog-screenshots"></div>
+    <div class="dialog-links" id="dialog-links"></div>
+  </dialog>
+<dialog
+  id="certificate-gallery-dialog"
+  class="certificate-gallery-dialog"
+  aria-labelledby="certificate-gallery-title"
+>
+  <button
+    id="close-certificate-gallery"
+    class="dialog-close"
+    type="button"
+    aria-label="Close certificate gallery"
+  >
+    ×
+  </button>
+
+  <span class="eyebrow">CERTIFICATIONS & LEARNING</span>
+  <h2 id="certificate-gallery-title">Certificate gallery</h2>
+
+  <div
+    id="certificate-gallery-grid"
+    class="certificate-gallery-grid"
+  ></div>
+</dialog>
+<dialog
+  id="image-viewer"
+  class="image-viewer"
+  aria-label="Project image viewer"
+>
+  <form method="dialog">
+    <button
+      class="dialog-close"
+      type="submit"
+      aria-label="Close image viewer"
+    >
+      ×
+    </button>
+  </form>
+
+  <div class="image-viewer-stage">
+    <img id="viewer-image" alt="">
+  </div>
+
+  <div class="image-viewer-controls">
+    <button id="viewer-previous" type="button">
+      Previous
+    </button>
+
+    <div class="image-viewer-info" aria-live="polite">
+      <p id="viewer-caption"></p>
+      <span id="viewer-count"></span>
+    </div>
+
+    <button id="viewer-next" type="button">
+      Next
+    </button>
+  </div>
+</dialog>
+</body>
+</html>
